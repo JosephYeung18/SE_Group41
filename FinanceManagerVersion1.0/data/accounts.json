@@ -1,0 +1,14 @@
+[
+  {
+    "balance": 50000,
+    "name": "账户 A",
+    "description": "",
+    "id": "0346c27c-22b8-4ff1-ad8b-d167d8ad3e87"
+  },
+  {
+    "balance": 2000,
+    "name": "账户 B",
+    "description": "",
+    "id": "c631d0d6-5a17-4e70-b11f-abc81fd246dd"
+  }
+]

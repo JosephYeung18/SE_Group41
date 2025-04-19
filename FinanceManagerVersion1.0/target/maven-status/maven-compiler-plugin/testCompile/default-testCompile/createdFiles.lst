@@ -1,0 +1,6 @@
+com/financemanager/service/CategoryServiceTest.class
+com/financemanager/service/DataPersistenceServiceTest.class
+com/financemanager/controller/BudgetControllerTest.class
+com/financemanager/controller/TransactionControllerTest.class
+com/financemanager/service/AIServiceTest.class
+com/financemanager/model/TransactionTest.class

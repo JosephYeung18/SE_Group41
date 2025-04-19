@@ -1,0 +1,242 @@
+[
+  {
+    "date": "2025-04-13",
+    "amount": 35.5,
+    "comment": "午餐",
+    "id": "tx-001",
+    "type": "EXPENSE",
+    "categoryId": "expense-food"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 120,
+    "comment": "超市购物",
+    "id": "tx-002",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 200,
+    "comment": "电影和晚餐",
+    "id": "tx-003",
+    "type": "EXPENSE",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "date": "2025-04-12",
+    "amount": 5000,
+    "comment": "四月工资",
+    "id": "tx-004",
+    "type": "INCOME",
+    "categoryId": "income-salary"
+  },
+  {
+    "date": "2025-04-11",
+    "amount": 45,
+    "comment": "打车",
+    "id": "tx-005",
+    "type": "EXPENSE",
+    "categoryId": "expense-transport"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 250,
+    "comment": "",
+    "id": "844d65c0-ee9d-400e-bc12-4e3fa8322b9e",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-01",
+    "amount": 35.5,
+    "comment": "肯德基午餐",
+    "id": "10ff3da3-12c7-4726-8963-2577928299aa",
+    "type": "EXPENSE",
+    "categoryId": "expense-food"
+  },
+  {
+    "date": "2025-04-02",
+    "amount": 15,
+    "comment": "地铁充值",
+    "id": "dfaf28f5-4300-47b6-adbe-1bd473ef5e5a",
+    "type": "EXPENSE",
+    "categoryId": "expense-transport"
+  },
+  {
+    "date": "2025-04-03",
+    "amount": 299,
+    "comment": "李宁运动鞋",
+    "id": "7afc76e8-1b32-4ebc-9294-af4ef10d0485",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-04",
+    "amount": 1500,
+    "comment": "房租支付",
+    "id": "72c029ba-f122-4beb-96d3-6b02d984a17e",
+    "type": "EXPENSE",
+    "categoryId": "expense-housing"
+  },
+  {
+    "date": "2025-04-05",
+    "amount": 45.8,
+    "comment": "超市购物",
+    "id": "f33c02e4-9548-4ee0-a5c9-45077498f17c",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-06",
+    "amount": 120,
+    "comment": "电影票和爆米花",
+    "id": "848b3760-da65-496f-bb11-1732298b42e0",
+    "type": "EXPENSE",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "date": "2025-04-07",
+    "amount": 200,
+    "comment": "英语课程学费",
+    "id": "a1dc7b17-b172-4ea9-877e-ad6bfe681dbe",
+    "type": "EXPENSE",
+    "categoryId": "expense-education"
+  },
+  {
+    "date": "2025-04-08",
+    "amount": 65.5,
+    "comment": "药店购买感冒药",
+    "id": "68dcbda7-95c3-4b51-ab12-e94b2b0c2ce2",
+    "type": "EXPENSE",
+    "categoryId": "expense-medical"
+  },
+  {
+    "date": "2025-04-10",
+    "amount": 8500,
+    "comment": "4月份工资",
+    "id": "34afc9dc-512f-4778-9c4e-678a0e4a1728",
+    "type": "INCOME",
+    "categoryId": "income-salary"
+  },
+  {
+    "date": "2025-04-12",
+    "amount": 300,
+    "comment": "闲置物品出售",
+    "id": "7f3814cc-bd7b-4676-b246-bbaea4ca46a1",
+    "type": "INCOME",
+    "categoryId": "income-other"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 88,
+    "comment": "理发店剪发染色",
+    "id": "bc748094-b461-4221-a507-6fbed5f38d1d",
+    "type": "EXPENSE",
+    "categoryId": "expense-other"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 1200,
+    "comment": "购买新手机",
+    "id": "74a695ca-b9bc-4262-81f6-e07ad8ab66a7",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-01",
+    "amount": 35.5,
+    "comment": "肯德基午餐",
+    "id": "e9333aa6-5050-4359-8bde-81729fc63e8a",
+    "type": "EXPENSE",
+    "categoryId": "expense-food"
+  },
+  {
+    "date": "2025-04-02",
+    "amount": 15,
+    "comment": "地铁充值",
+    "id": "156828da-c67b-49aa-9c24-b4f7762f9993",
+    "type": "EXPENSE",
+    "categoryId": "expense-transport"
+  },
+  {
+    "date": "2025-04-03",
+    "amount": 299,
+    "comment": "李宁运动鞋",
+    "id": "753f9550-c05f-4602-bdf0-7ef8538d4f7a",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-04",
+    "amount": 1500,
+    "comment": "房租支付",
+    "id": "f9aaf3c7-a590-4da6-8c09-d6ed9c9f41c0",
+    "type": "EXPENSE",
+    "categoryId": "expense-housing"
+  },
+  {
+    "date": "2025-04-05",
+    "amount": 45.8,
+    "comment": "超市购物",
+    "id": "4e203a32-6703-448e-91a3-1940e40ae99e",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-06",
+    "amount": 120,
+    "comment": "电影票和爆米花",
+    "id": "d86da97d-8e81-4bcd-9769-63af345e555b",
+    "type": "EXPENSE",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "date": "2025-04-07",
+    "amount": 200,
+    "comment": "英语课程学费",
+    "id": "7e2a18d5-ce9e-4944-acbb-6ae844cf5cf6",
+    "type": "EXPENSE",
+    "categoryId": "expense-education"
+  },
+  {
+    "date": "2025-04-08",
+    "amount": 65.5,
+    "comment": "药店购买感冒药",
+    "id": "e6350766-7329-4db1-8d12-bd656355d031",
+    "type": "EXPENSE",
+    "categoryId": "expense-medical"
+  },
+  {
+    "date": "2025-04-10",
+    "amount": 8500,
+    "comment": "4月份工资",
+    "id": "ed315750-9c5a-4371-9913-710a30b55f05",
+    "type": "INCOME",
+    "categoryId": "income-salary"
+  },
+  {
+    "date": "2025-04-12",
+    "amount": 300,
+    "comment": "闲置物品出售",
+    "id": "47cece7a-5670-44cf-bf89-270da9f08d37",
+    "type": "INCOME",
+    "categoryId": "income-other"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 88,
+    "comment": "理发店剪发染色",
+    "id": "0e6a434a-653a-4a83-bdd0-0af269f094ec",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "date": "2025-04-13",
+    "amount": 1200,
+    "comment": "购买新手机",
+    "id": "9bbad075-9b1f-485a-8618-677a0847f545",
+    "type": "EXPENSE",
+    "categoryId": "expense-shopping"
+  }
+]
