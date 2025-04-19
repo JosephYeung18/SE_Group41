@@ -1,12 +1,14 @@
 # SE_Group41
 This is Software Engineering Group 41
-Team Member：
-Juejia Yang 
-Wenxiang Guo
-Haocheng Zhang
-Site Li
-Yuxuan Liao
-Yifei Li
+
+## Team Member：
+
+- Juejia Yang
+- Wenxiang Gu
+- Site Li
+- Haocheng Zhang
+- Yuxuan Liao
+- Yifei Li
 
 # 智能个人理财管理器
 
