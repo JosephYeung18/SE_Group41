@@ -10,7 +10,7 @@ This is Software Engineering Group 41
 - Yuxuan Liao
 - Yifei Li
 
-# 智能个人理财管理器
+# 智能个人理财管理小助手
 
 一个使用Java开发的智能个人理财管理应用程序，帮助用户记录支出、设定储蓄目标，并分析消费习惯。
 
