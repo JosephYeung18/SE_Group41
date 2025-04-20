@@ -4,7 +4,7 @@ This is Software Engineering Group 41
 
 ## Team Member：  
 - Juejia Yang  
-- Wenxiang Gu  
+- Wenxiang Guo
 - Site Li  
 - Haocheng Zhang  
 - Yuxuan Liao  
