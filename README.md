@@ -1,70 +1,64 @@
+```markdown
+# Personal Contribution - Yuxuan Liao
 
-# SE_Group41  
-This is Software Engineering Group 41  
+In the **Personal Finance Manager** project, I was mainly responsible for the development of the transaction entry and details display parts, which are crucial for users to record and view transaction information. The following is a detailed account of my key contributions:
 
-## Team Member：  
-- Juejia Yang  
-- Wenxiang Guo
-- Site Li  
-- Haocheng Zhang  
-- Yuxuan Liao  
-- Yifei Li  
+## Core Module Development
 
-# Smart Personal Finance Management Assistant  
-A smart personal finance management application developed in Java to help users record expenses, set savings goals, and analyze spending habits.  
+### 1. Transaction Entry Panel Development  
+- Designed and implemented the `TransactionEntryPanel` class, providing a user-friendly interface for entering income and expense transactions.  
+- Implemented two sub-panels for income and expense entries, including:  
+  - Category selection  
+  - Amount input  
+  - Date selection  
+  - Note input functions  
+- Added an **"Import Transaction Data"** button to support importing transaction data from a CSV file, along with clear format instructions for users.  
 
+### 2. Transaction Details Panel Development  
+- Developed the `TransactionDetailsPanel` class to display transaction history and monthly statistics.  
+- Implemented a table to show transaction details, including:  
+  - Date  
+  - Type  
+  - Category  
+  - Amount  
+  - Notes  
+  *(Ensured the table data is non-editable.)*  
+- Added functional buttons:  
+  - **"View All"**  
+  - **"Filter"**  
+  - **"Export"**  
+  *(To support viewing all transactions, filtering by date/type, and exporting data to CSV.)*  
 
-## Technology Stack  
-- Java 8  
-- Swing GUI  
-- JSON data storage  
-- DeepSeek AI API  
+### 3. Function Implementation  
+- **In `TransactionEntryPanel`:**  
+  - Implemented input validation (e.g., category selection, valid positive amount).  
+  - Refreshed `TransactionDetailsPanel` and `AssetBudgetPanel` post-transaction to display updated data.  
+- **In `TransactionDetailsPanel`:**  
+  - Calculated monthly income, expenses, and net income, updating labels in real-time.  
+  - Exported displayed data to CSV with special character escaping for data correctness.  
 
-## System Requirements  
-- Java 8 or higher  
-- Internet connection (for AI features)  
+## Key Classes  
 
-## Installation Guide  
-1. Ensure Java 8 is installed  
-2. Download the release package (JAR file)  
-3. Create a `config.properties` file and configure the DeepSeek API key  
-4. Run by double-clicking the JAR file or using the command line: `java -jar FinanceManager.jar`  
+### `TransactionEntryPanel`  
+- Builds the transaction entry interface (income/expense sub-panels + import button).  
+- Handles user input events (e.g., adding transactions, importing data) via `TransactionController`.  
+- Refreshes dependent panels (`TransactionDetailsPanel`, `AssetBudgetPanel`) after operations.  
 
-## Configure DeepSeek API  
-Create a `config.properties` file in the application root directory and add the following content:  
-```properties  
-deepseek.api.key=YOUR_API_KEY_HERE  
-```  
-Replace `YOUR_API_KEY_HERE` with your DeepSeek API key.  
+### `TransactionDetailsPanel`  
+- Builds the transaction display interface (summary panel + transaction table).  
+- Manages button events (filtering, exporting) and fetches data through `TransactionController`.  
+- Updates UI components (table, summary labels) dynamically.  
 
-## Usage Guide  
-1. **Main Interface**: Displays financial overview and navigation options  
-2. **AI Chat**: Chat with the AI assistant to get financial advice  
-3. **Asset Budget**: Manage accounts and budgets  
-4. **Transaction Details**: View transaction history and statistics  
-5. **Expense Recording**: Add income and expense transactions  
-6. **Savings Plan**: Set and track savings goals  
+## Testing and Quality Assurance  
+- Conducted **manual testing** on `TransactionEntryPanel` and `TransactionDetailsPanel` to verify:  
+  - Input validation.  
+  - Button functionality.  
+  - Data display accuracy.  
+- Ensured code stability through rigorous logic checks and edge-case handling *(despite no automated tests)*.  
 
-## CSV Import Format  
-The imported CSV file should contain the following columns (first row as header):  
-```csv  
-Date,Type,Category,Amount,Note  
-2023-01-01,Income,Salary,5000,January salary  
-2023-01-02,Expense,Dining,100,Lunch  
-```  
-
-## Project Structure  
-- `src/` - Source code  
-  - `main/java/com/financemanager/` - Java source files  
-    - `controller/` - Controller layer  
-    - `model/` - Model layer  
-    - `view/` - View layer  
-    - `service/` - Service layer  
-    - `util/` - Utility classes  
-  - `test/` - Test code  
-- `data/` - Data files  
-- `docs/` - Documentation  
-
-## Development Guide  
-1. Build the project using Maven: `mvn clean package`  
-2. Run tests: `mvn test`
+## Team Collaboration  
+- Aligned panel designs with the **system's overall UI/UX**.  
+- Supported teammates by:  
+  - Sharing `TransactionController` interfaces.  
+  - Clarifying data formats for integration.  
+```
