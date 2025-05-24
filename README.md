@@ -1,70 +1,86 @@
+# Smart Personal Finance Manager
 
-# SE_Group41  
-This is Software Engineering Group 41  
+## ✨ Features  
+### 1. 💰 Savings Plan Management  
+- **📝 Create Plans**: Set savings goals with name, target amount, and timeframe  
+- **💰 Deposit/Withdraw**: Track progress with deposit/withdraw operations  
+- **📊 Progress Tracking**: Automatic completion percentage calculation  
+- **🗂️ Categorization**: Filter plans by active/completed status  
 
-## Team Member：  
-- Juejia Yang  
-- Wenxiang Guo
-- Site Li  
-- Haocheng Zhang  
-- Yuxuan Liao  
-- Yifei Li  
+### 2. ⚙️ User Settings  
+- **👤 Profile Management**: Set and save username  
+- **🔄 Reset Function**: Restore default settings when needed  
+- **📂 Local Storage**: Persistent configuration using properties file  
 
-# Smart Personal Finance Management Assistant  
-A smart personal finance management application developed in Java to help users record expenses, set savings goals, and analyze spending habits.  
+### 3. 📊 Data Persistence  
+- **💾 Automatic Saving**: All changes saved to local JSON files  
+- **🔄 Data Loading**: Automatic initialization with error handling  
+- **🔒 Data Integrity**: Validation for deposit/withdraw operations  
 
+## 🛠️ Technical Architecture  
+### Core Components  
+| Component               | Description                                                                 |  
+|-------------------------|-----------------------------------------------------------------------------|  
+| **⚙️ UI Framework**      | Java Swing (JPanel/JButton/JTextField, etc.)                                |  
+| **📁 Data Management**   | `SavingsPlanController` for business logic, `DataPersistenceService` for storage |  
+| **📊 Model Layer**       | `SavingsPlan` model with deposit/withdraw operations and progress tracking  |  
+| **🔧 Utility**           | UUID generation for unique IDs, Date handling for plan timelines            |  
 
-## Technology Stack  
-- Java 8  
-- Swing GUI  
-- JSON data storage  
-- DeepSeek AI API  
+## 📖 Usage Guide  
+### 1. Savings Plan Operations  
+1. **Create Plan**:  
+   - Set name, target amount, and end date  
+   - System auto-generates ID and start date  
 
-## System Requirements  
-- Java 8 or higher  
-- Internet connection (for AI features)  
+2. **Track Progress**:  
+   - Use `deposit()` to add funds  
+   - View completion percentage via `getCompletionPercentage()`  
 
-## Installation Guide  
-1. Ensure Java 8 is installed  
-2. Download the release package (JAR file)  
-3. Create a `config.properties` file and configure the DeepSeek API key  
-4. Run by double-clicking the JAR file or using the command line: `java -jar FinanceManager.jar`  
+3. **Manage Plans**:  
+   - Filter active plans with `getActivePlans()`  
+   - View completed goals with `getCompletedPlans()`  
 
-## Configure DeepSeek API  
-Create a `config.properties` file in the application root directory and add the following content:  
-```properties  
-deepseek.api.key=YOUR_API_KEY_HERE  
-```  
-Replace `YOUR_API_KEY_HERE` with your DeepSeek API key.  
+### 2. User Settings  
+- **Edit Profile**:  
+  - Update username in settings panel  
+  - Changes saved to `config.properties`  
 
-## Usage Guide  
-1. **Main Interface**: Displays financial overview and navigation options  
-2. **AI Chat**: Chat with the AI assistant to get financial advice  
-3. **Asset Budget**: Manage accounts and budgets  
-4. **Transaction Details**: View transaction history and statistics  
-5. **Expense Recording**: Add income and expense transactions  
-6. **Savings Plan**: Set and track savings goals  
+- **Reset Options**:  
+  - Restore default configuration  
+  - Requires confirmation before executing  
 
-## CSV Import Format  
-The imported CSV file should contain the following columns (first row as header):  
-```csv  
-Date,Type,Category,Amount,Note  
-2023-01-01,Income,Salary,5000,January salary  
-2023-01-02,Expense,Dining,100,Lunch  
-```  
+## 📂 Project Structure  
 
-## Project Structure  
-- `src/` - Source code  
-  - `main/java/com/financemanager/` - Java source files  
-    - `controller/` - Controller layer  
-    - `model/` - Model layer  
-    - `view/` - View layer  
-    - `service/` - Service layer  
-    - `util/` - Utility classes  
-  - `test/` - Test code  
-- `data/` - Data files  
-- `docs/` - Documentation  
-
-## Development Guide  
+## 🛠️ Development Guide  
 1. Build the project using Maven: `mvn clean package`  
-2. Run tests: `mvn test`
+2. Run tests: `mvn test`  
+src/
+├── main/java/com/financemanager/
+│ ├── controller/ # Business logic
+│ │ └── SavingsPlanController.java
+│ ├── model/ # Data models
+│ │ └── SavingsPlan.java
+│ ├── view/ # UI components
+│ │ └── UserSettingPanel.java
+│ └── service/ # Services
+│ └── DataPersistenceService.java
+data/ # JSON data files
+config.properties # User configuration
+
+
+## 🚀 Running Environment  
+- **JDK Version**: Java 8+  
+- **Dependencies**:  
+  - Java Standard Library (Swing/AWT)  
+  - No external libraries required  
+
+## 💡 Extension Suggestions  
+1. **Enhanced Reporting**: Add savings progress charts and achievement milestones  
+2. **Plan Templates**: Predefined savings templates (e.g., "Vacation Fund")  
+3. **Reminder System**: Notifications for upcoming plan deadlines  
+4. **Data Export**: PDF/Excel reporting for savings history  
+
+## ⚠️ Error Handling  
+- File permission errors show user-friendly alerts  
+- Data validation prevents negative amounts/over-withdrawals  
+- Automatic fallback to empty dataset if loading fails  
