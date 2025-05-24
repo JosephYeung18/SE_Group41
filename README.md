@@ -45,3 +45,13 @@ As the lead developer responsible for the **Asset and Budget** modules of the fi
 - The **View** component responsible for displaying and managing the user’s budget.
 - Displays budget categories for the current month, showing the total allocated budget, amount spent, and remaining balance.
 - Utilizes **JProgressBar** to show the progress of each budget category in real-time, updating dynamically based on user input.
+  
+## Testing and Quality Assurance
+
+### 1. Unit Testing
+- Wrote unit tests to ensure that key functionalities in **BudgetController** and **AssetController** work as expected.
+- Test coverage includes adding, updating, and deleting assets and budgets, as well as ensuring the accuracy of budget calculations (total expenses, remaining balance).
+
+### 2. Test Automation
+- Automated the testing process using **JUnit 5** to ensure that changes to asset and budget data are correctly reflected in the system, and edge cases are handled properly.
+- Created test cases for validating the persistence and retrieval of asset and budget data to ensure that no data is lost between sessions.
