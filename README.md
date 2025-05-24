@@ -20,6 +20,18 @@ As the technical leader of the Personal Finance Manager project, I took the lead
 - Designed data processing pipelines to ensure efficient analysis of large datasets
 - Implemented customizable chart styling to enhance visual appeal and data interpretability
 
+### Key Classes  
+1. **`AnalysisPanel`**  
+   - Builds the chart analysis interface and handles user interactions (e.g., selecting analysis type/month).  
+   - Calls `DataAdapter` for data and triggers `ChartGenerator` for chart rendering.  
+
+2. **`DataAdapter`**  
+   - Extracts raw transaction data from `TransactionController` and converts it into structured data (e.g., Map/List) for charts.  
+   - Provides methods to aggregate data by month/quarter (e.g., `getCategoryExpensesForMonth`).  
+
+3. **`ChartGenerator`**  
+   - Encapsulates chart generation logic with JFreeChart, supporting PieChart, LineChart, BarChart, etc.  
+   - Configures chart styles (colors, fonts, grid lines) and returns `ChartPanel` for Swing integration.  
 ## Testing Framework Establishment
 
 ### 1. Unit Test Coverage
