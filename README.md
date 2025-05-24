@@ -1,74 +1,86 @@
-#  Personal Financial Manager 
-
-## 🌟 Project Overview  
-This system is an application based on Java Swing, designed to help users record and analyze personal financial income and expenditure. It provides functions such as transaction record management, data statistics, and chart visualization, enabling users to track monthly/quarterly financial trends and optimize spending structures.  
-### 👥 Team Member：  
-- Juejia Yang 
-- Wenxiang Guo 
-- Site Li   
-- Haocheng Zhang   
-- Yuxuan Liao   
-- Yifei Li  
+# Smart Personal Finance Manager
 
 ## ✨ Features  
-### 1. 📝 Transaction Management  
-- **📝 Record Income/Expense**: Support adding income/expense records with fields including amount, category, date, and notes.  
-- **🛠️ Edit & Delete**: Modify existing records or remove invalid data.  
-- **🔍 Data Query**: Filter transactions by date range or category.  
+### 1. 💰 Savings Plan Management  
+- **📝 Create Plans**: Set savings goals with name, target amount, and timeframe  
+- **💰 Deposit/Withdraw**: Track progress with deposit/withdraw operations  
+- **📊 Progress Tracking**: Automatic completion percentage calculation  
+- **🗂️ Categorization**: Filter plans by active/completed status  
 
-### 2. 📊 Data Analysis & Visualization 📈 
-- **Single Month Analysis**: Generate monthly expense pie charts and financial summaries (income/expense/balance).  
-- **Three-Month Trend**: Compare line charts of income/expense/balance trends over the past three months.  
-- **Quarterly Analysis**: Display stacked bar charts of expenditure categories across months in a quarter.  
-- **Forecast Comparison**: Bar chart comparison of expenditure categories between the current month and forecasted next month.  
+### 2. ⚙️ User Settings  
+- **👤 Profile Management**: Set and save username  
+- **🔄 Reset Function**: Restore default settings when needed  
+- **📂 Local Storage**: Persistent configuration using properties file  
 
-### 3. 🎨 User Interface  
-- **🎨 Visual Charts**: Interactive charts generated via JFreeChart, supporting zooming and tooltips.  
-- **🎛️ Operation Panel**: Simple controls for selecting analysis type and time range, with one-click chart generation.  
-- **📄 Data Display**: Scrollable panel for multi-chart layouts with dynamic refresh.  
+### 3. 📊 Data Persistence  
+- **💾 Automatic Saving**: All changes saved to local JSON files  
+- **🔄 Data Loading**: Automatic initialization with error handling  
+- **🔒 Data Integrity**: Validation for deposit/withdraw operations  
 
 ## 🛠️ Technical Architecture  
 ### Core Components  
-| Component       | Description                                                                 |  
-|-----------------|-----------------------------------------------------------------------------|  
-| **⚙️ UI Framework**| Java Swing (JPanel/JComboBox/JButton, etc.)                                 |  
-| **📊 Chart Library**| JFreeChart (for generating pie, line, and bar charts)                       |  
-| **📝 Data Management**| `TransactionController` singleton for managing transactions; `DataAdapter` for data conversion |  
-| **📁 Layout Management**| Mixed layouts (BorderLayout/GridLayout/BoxLayout)                           |  
-
-##  Running Environment  
-- **JDK Version**: Java 8 or higher  
-- **Dependencies**:  
-  - JFreeChart (manually import `jfreechart-1.5.3.jar` and `jcommon-1.0.23.jar`)  
-  - Other: Java standard libraries (Swing/AWT/Date, etc.)  
+| Component               | Description                                                                 |  
+|-------------------------|-----------------------------------------------------------------------------|  
+| **⚙️ UI Framework**      | Java Swing (JPanel/JButton/JTextField, etc.)                                |  
+| **📁 Data Management**   | `SavingsPlanController` for business logic, `DataPersistenceService` for storage |  
+| **📊 Model Layer**       | `SavingsPlan` model with deposit/withdraw operations and progress tracking  |  
+| **🔧 Utility**           | UUID generation for unique IDs, Date handling for plan timelines            |  
 
 ## 📖 Usage Guide  
-### 1. 🖱️ Interface Operations  
-1. **Select Analysis Type**: Use the dropdown menu to choose "Single Month Analysis", "Three Month Trend", or "Quarterly Analysis".  
-2. **Select Month**: Dynamically load the last three months for quick time-range switching.  
-3. **Generate Charts**: Click the "View Analysis" button to render charts based on selections, displayed in the scrollable panel below.  
+### 1. Savings Plan Operations  
+1. **Create Plan**:  
+   - Set name, target amount, and end date  
+   - System auto-generates ID and start date  
 
-### 2. Chart Interactions  
-- **Pie Charts**: Show expenditure category proportions; click legend items to hide/show categories.  
-- **Line/Bar Charts**: X-axis = month, Y-axis = amount; support mouse zooming and dragging for details.  
-- **ℹTooltips**: Hover over chart elements to see specific values (e.g., "Food: ¥500.00").  
+2. **Track Progress**:  
+   - Use `deposit()` to add funds  
+   - View completion percentage via `getCompletionPercentage()`  
+
+3. **Manage Plans**:  
+   - Filter active plans with `getActivePlans()`  
+   - View completed goals with `getCompletedPlans()`  
+
+### 2. User Settings  
+- **Edit Profile**:  
+  - Update username in settings panel  
+  - Changes saved to `config.properties`  
+
+- **Reset Options**:  
+  - Restore default configuration  
+  - Requires confirmation before executing  
 
 ## 📂 Project Structure  
-- `src/` - Source code  
-  - `main/java/com/financemanager/` - Java source files  
-    - `controller/` - Controller layer  
-    - `model/` - Model layer  
-    - `view/` - View layer  
-    - `service/` - Service layer  
-    - `util/` - Utility classes  
-  - `test/` - Test code  
-- `data/` - Data files  
-- `docs/` - Documentation  
-
-## 💡 Extension Suggestions  
-1. **More Chart Types**: Add radar charts, scatter plots, etc., to analyze spending-income correlations.  
-2. **Forecasting**: Enhance expenditure prediction algorithms based on historical data.  
 
 ## 🛠️ Development Guide  
 1. Build the project using Maven: `mvn clean package`  
 2. Run tests: `mvn test`  
+src/
+├── main/java/com/financemanager/
+│ ├── controller/ # Business logic
+│ │ └── SavingsPlanController.java
+│ ├── model/ # Data models
+│ │ └── SavingsPlan.java
+│ ├── view/ # UI components
+│ │ └── UserSettingPanel.java
+│ └── service/ # Services
+│ └── DataPersistenceService.java
+data/ # JSON data files
+config.properties # User configuration
+
+
+## 🚀 Running Environment  
+- **JDK Version**: Java 8+  
+- **Dependencies**:  
+  - Java Standard Library (Swing/AWT)  
+  - No external libraries required  
+
+## 💡 Extension Suggestions  
+1. **Enhanced Reporting**: Add savings progress charts and achievement milestones  
+2. **Plan Templates**: Predefined savings templates (e.g., "Vacation Fund")  
+3. **Reminder System**: Notifications for upcoming plan deadlines  
+4. **Data Export**: PDF/Excel reporting for savings history  
+
+## ⚠️ Error Handling  
+- File permission errors show user-friendly alerts  
+- Data validation prevents negative amounts/over-withdrawals  
+- Automatic fallback to empty dataset if loading fails  
