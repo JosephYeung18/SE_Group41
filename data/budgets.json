@@ -1,0 +1,178 @@
+[
+  {
+    "amount": 2000,
+    "month": 4,
+    "year": 2025,
+    "spent": 297.5,
+    "id": "budget-001",
+    "categoryId": "expense-food"
+  },
+  {
+    "amount": 1000,
+    "month": 4,
+    "year": 2025,
+    "spent": 5550.400000000001,
+    "id": "budget-002",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "amount": 500,
+    "month": 4,
+    "year": 2025,
+    "spent": 760,
+    "id": "budget-003",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "amount": 300,
+    "month": 4,
+    "year": 2025,
+    "spent": 135,
+    "id": "budget-004",
+    "categoryId": "expense-transport"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 4500,
+    "id": "1e57d9e0-2061-4ba9-b290-f07835fc3cdc",
+    "categoryId": "expense-housing"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 600,
+    "id": "998a1554-8134-4412-b40d-be4bcfcabce1",
+    "categoryId": "expense-education"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 196.5,
+    "id": "b929b828-527e-44eb-86ef-aa3d97bb2c8f",
+    "categoryId": "expense-medical"
+  },
+  {
+    "amount": 1000,
+    "month": 5,
+    "year": 2025,
+    "spent": 750,
+    "id": "3e98613d-3614-47dd-bd4b-6026c013cccd",
+    "categoryId": "expense-food"
+  },
+  {
+    "amount": 300,
+    "month": 5,
+    "year": 2025,
+    "spent": 120,
+    "id": "258bd1f6-b5d6-40b5-a7d2-cf9be7feef74",
+    "categoryId": "expense-transport"
+  },
+  {
+    "amount": 46,
+    "month": 5,
+    "year": 2025,
+    "spent": 45,
+    "id": "e8b14157-b464-46ce-975d-e83a027a0e35",
+    "categoryId": "expense-education"
+  },
+  {
+    "amount": 150,
+    "month": 5,
+    "year": 2025,
+    "spent": 30,
+    "id": "9c9acb1f-f9cc-43a4-9c91-0419991067f8",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "amount": 0,
+    "month": 5,
+    "year": 2025,
+    "spent": 399,
+    "id": "5fd0d8d1-24a9-4591-a4fd-2425c14233b6",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "amount": 0,
+    "month": 5,
+    "year": 2025,
+    "spent": 240,
+    "id": "fbf9124b-8857-463c-9535-3b5e59e01a3c",
+    "categoryId": "expense-other"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 88,
+    "id": "901850a2-7816-4223-9881-e7e3161b13c0",
+    "categoryId": "expense-other"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 1800,
+    "id": "fb1bd3cb-8435-4541-8d85-fe9baa0f5301",
+    "categoryId": "expense-housing"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 90.5,
+    "id": "cb65b125-1b53-4879-981d-f6a01caad3ad",
+    "categoryId": "expense-food"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 2300,
+    "id": "94f73d27-3998-4352-ac00-0cd78357bef8",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 500,
+    "id": "c27df527-89b2-4170-a223-d5d4c1176bb8",
+    "categoryId": "expense-education"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 360,
+    "id": "ece43a72-9a1c-4371-8cf9-01fb20b339e0",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 350,
+    "id": "7b9f7405-aca5-4694-83d2-10f3f40b4bda",
+    "categoryId": "expense-other"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 50,
+    "id": "8ba86bd4-bd0c-4012-aafe-688e82058e3d",
+    "categoryId": "expense-transport"
+  },
+  {
+    "amount": 0,
+    "month": 3,
+    "year": 2025,
+    "spent": 300,
+    "id": "22045fa7-91c4-433b-83c8-19875287a918",
+    "categoryId": "expense-medical"
+  }
+]

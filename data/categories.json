@@ -1,0 +1,93 @@
+[
+  {
+    "color": "",
+    "iconName": "",
+    "name": "wages",
+    "id": "income-salary",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "bonus",
+    "id": "income-bonus",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "interest",
+    "id": "income-interest",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "income from investment",
+    "id": "income-investment",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Other",
+    "id": "income-other",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Food & Dining",
+    "id": "expense-food",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Shopping",
+    "id": "expense-shopping",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Transportation",
+    "id": "expense-transport",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Housing",
+    "id": "expense-housing",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Entertainment",
+    "id": "expense-entertainment",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Education",
+    "id": "expense-education",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Healthcare",
+    "id": "expense-medical",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "Other",
+    "id": "expense-other",
+    "type": "EXPENSE"
+  }
+]
