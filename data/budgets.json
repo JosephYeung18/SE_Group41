@@ -1,0 +1,66 @@
+[
+  {
+    "amount": 2000,
+    "month": 4,
+    "year": 2025,
+    "spent": 191,
+    "id": "budget-001",
+    "categoryId": "expense-food"
+  },
+  {
+    "amount": 1000,
+    "month": 4,
+    "year": 2025,
+    "spent": 2002.8,
+    "id": "budget-002",
+    "categoryId": "expense-shopping"
+  },
+  {
+    "amount": 500,
+    "month": 4,
+    "year": 2025,
+    "spent": 320,
+    "id": "budget-003",
+    "categoryId": "expense-entertainment"
+  },
+  {
+    "amount": 300,
+    "month": 4,
+    "year": 2025,
+    "spent": 60,
+    "id": "budget-004",
+    "categoryId": "expense-transport"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 1500,
+    "id": "1e57d9e0-2061-4ba9-b290-f07835fc3cdc",
+    "categoryId": "expense-housing"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 200,
+    "id": "998a1554-8134-4412-b40d-be4bcfcabce1",
+    "categoryId": "expense-education"
+  },
+  {
+    "amount": 0,
+    "month": 4,
+    "year": 2025,
+    "spent": 65.5,
+    "id": "b929b828-527e-44eb-86ef-aa3d97bb2c8f",
+    "categoryId": "expense-medical"
+  },
+  {
+    "amount": 0,
+    "month": 5,
+    "year": 2025,
+    "spent": 500,
+    "id": "3e98613d-3614-47dd-bd4b-6026c013cccd",
+    "categoryId": "expense-food"
+  }
+]

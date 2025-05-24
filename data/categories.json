@@ -1,0 +1,93 @@
+[
+  {
+    "color": "",
+    "iconName": "",
+    "name": "工资",
+    "id": "income-salary",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "奖金",
+    "id": "income-bonus",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "利息",
+    "id": "income-interest",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "投资收益",
+    "id": "income-investment",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "其他收入",
+    "id": "income-other",
+    "type": "INCOME"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "餐饮",
+    "id": "expense-food",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "购物",
+    "id": "expense-shopping",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "交通",
+    "id": "expense-transport",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "住房",
+    "id": "expense-housing",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "娱乐",
+    "id": "expense-entertainment",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "教育",
+    "id": "expense-education",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "医疗",
+    "id": "expense-medical",
+    "type": "EXPENSE"
+  },
+  {
+    "color": "",
+    "iconName": "",
+    "name": "其他",
+    "id": "expense-other",
+    "type": "EXPENSE"
+  }
+]

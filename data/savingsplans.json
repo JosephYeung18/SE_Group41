@@ -1,0 +1,18 @@
+[
+  {
+    "targetAmount": 1000,
+    "endDate": "2026-05-23",
+    "depositedAmount": 1000,
+    "name": "test",
+    "id": "37e4328f-50ba-4280-933b-049dc89b9e61",
+    "startDate": "2025-05-23"
+  },
+  {
+    "targetAmount": 10000,
+    "endDate": "2026-05-23",
+    "depositedAmount": 10000,
+    "name": "66666",
+    "id": "8ead789c-e215-4344-8a3d-fe6c470e0474",
+    "startDate": "2025-05-23"
+  }
+]
