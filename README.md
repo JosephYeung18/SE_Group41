@@ -1,4 +1,3 @@
-```markdown
 # Personal Contribution - Yuxuan Liao
 
 In the **Personal Finance Manager** project, I was mainly responsible for the development of the transaction entry and details display parts, which are crucial for users to record and view transaction information. The following is a detailed account of my key contributions:
