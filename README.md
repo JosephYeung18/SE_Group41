@@ -1,70 +1,47 @@
+# Personal Contribution - Wenxiang Guo
 
-# SE_Group41  
-This is Software Engineering Group 41  
+As the lead developer responsible for the **Asset and Budget** modules of the finance management system, I designed and implemented the core functionalities related to asset management and budgeting. Below is a detailed account of my key contributions:
 
-## Team Member：  
-- Juejia Yang  
-- Wenxiang Guo
-- Site Li  
-- Haocheng Zhang  
-- Yuxuan Liao  
-- Yifei Li  
+## Core Module Development
 
-# Smart Personal Finance Management Assistant  
-A smart personal finance management application developed in Java to help users record expenses, set savings goals, and analyze spending habits.  
+### 1. Architecture Design of Asset and Budget Modules
+- Designed and implemented an **MVC architecture** for both Asset and Budget modules, ensuring a clean separation of concerns and allowing for easy maintenance and future expansion.
+- Developed the **AssetController** and **BudgetController** classes to handle the logic and data manipulation for assets and budgets respectively. 
+- Implemented a **Singleton Design Pattern** for the `BudgetController` to guarantee that there is only one instance managing the budget data throughout the application.
 
+### 2. Budget Management Functionality
+- Developed a flexible budgeting system that allows users to create, update, and delete budgets for specific categories, months, and years.
+- In the **BudgetController**, I implemented the `addBudget()`, `updateBudget()`, and `deleteBudget()` methods, ensuring that budgets are correctly added, updated, and removed from the data structure.
+- Incorporated functionality for calculating total budgets, expenses, and remaining amounts for a given month, allowing users to quickly assess their financial standing.
+- Added a feature for visualizing budget progress using **JProgressBar**, where the progress bar dynamically adjusts based on the amount spent in each budget category.
 
-## Technology Stack  
-- Java 8  
-- Swing GUI  
-- JSON data storage  
-- DeepSeek AI API  
+### 3. Asset Management Functionality
+- Implemented asset tracking features where users can manage different types of assets, including accounts, liabilities, and net worth.
+- Developed the `AssetController` class to handle the logic for adding, editing, and deleting assets, ensuring smooth integration with the **AssetManagementPanel** for real-time data updates.
+- Created a comprehensive **AssetPanel** interface where users can view and manage their accounts, liabilities, and overall net worth.
 
-## System Requirements  
-- Java 8 or higher  
-- Internet connection (for AI features)  
+### 4. Data Persistence and Integration
+- Integrated the **DataPersistenceService** to ensure that all asset and budget data is saved and restored between sessions.
+- Developed methods for saving budget and asset data to a persistent storage medium, and loading this data back when the application starts, ensuring data consistency and reliability.
+- Utilized **UUID** for generating unique identifiers for each budget and asset, ensuring that every entry is distinct and easily referenced.
 
-## Installation Guide  
-1. Ensure Java 8 is installed  
-2. Download the release package (JAR file)  
-3. Create a `config.properties` file and configure the DeepSeek API key  
-4. Run by double-clicking the JAR file or using the command line: `java -jar FinanceManager.jar`  
+## Key Classes
 
-## Configure DeepSeek API  
-Create a `config.properties` file in the application root directory and add the following content:  
-```properties  
-deepseek.api.key=YOUR_API_KEY_HERE  
-```  
-Replace `YOUR_API_KEY_HERE` with your DeepSeek API key.  
+### 1. BudgetController
+- Central to the management of **budget data**. It contains methods for adding, updating, and deleting budgets. It also includes calculation methods to retrieve the total budget, total spending, and remaining balance for a specified time period (month/year).
+- Key methods: `addBudget()`, `updateBudget()`, `deleteBudget()`, and `calculateTotalExpenses()`.
+- Ensures that the budget data is persistent and updated immediately after any changes are made.
 
-## Usage Guide  
-1. **Main Interface**: Displays financial overview and navigation options  
-2. **AI Chat**: Chat with the AI assistant to get financial advice  
-3. **Asset Budget**: Manage accounts and budgets  
-4. **Transaction Details**: View transaction history and statistics  
-5. **Expense Recording**: Add income and expense transactions  
-6. **Savings Plan**: Set and track savings goals  
+### 2. AssetController
+- Manages all operations related to **assets** including adding, removing, and updating different types of assets (accounts, liabilities, etc.).
+- Key methods: `addAsset()`, `removeAsset()`, `updateAsset()`.
+- Integrates with the **AssetManagementPanel** to update the display whenever changes are made to the asset data.
 
-## CSV Import Format  
-The imported CSV file should contain the following columns (first row as header):  
-```csv  
-Date,Type,Category,Amount,Note  
-2023-01-01,Income,Salary,5000,January salary  
-2023-01-02,Expense,Dining,100,Lunch  
-```  
+### 3. AssetManagementPanel
+- The **View** component for managing assets. Displays a summary of the user's assets, liabilities, and net worth, allowing users to perform CRUD operations on their assets.
+- Real-time updates are triggered whenever the user adds, edits, or removes an asset, providing an up-to-date financial overview.
 
-## Project Structure  
-- `src/` - Source code  
-  - `main/java/com/financemanager/` - Java source files  
-    - `controller/` - Controller layer  
-    - `model/` - Model layer  
-    - `view/` - View layer  
-    - `service/` - Service layer  
-    - `util/` - Utility classes  
-  - `test/` - Test code  
-- `data/` - Data files  
-- `docs/` - Documentation  
-
-## Development Guide  
-1. Build the project using Maven: `mvn clean package`  
-2. Run tests: `mvn test`
+### 4. BudgetManagementPanel
+- The **View** component responsible for displaying and managing the user’s budget.
+- Displays budget categories for the current month, showing the total allocated budget, amount spent, and remaining balance.
+- Utilizes **JProgressBar** to show the progress of each budget category in real-time, updating dynamically based on user input.
