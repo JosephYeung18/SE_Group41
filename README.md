@@ -1,64 +1,56 @@
-# 智能个人理财管理器
+# Personal Contribution - Juejia Yang
 
-一个使用Java开发的智能个人理财管理应用程序，帮助用户记录支出、设定储蓄目标，并分析消费习惯。
+As the technical leader of the Personal Finance Manager project, I took the lead in designing and developing the Data Analysis module. I also established a comprehensive testing framework to ensure the system's quality and reliability. Below is a detailed account of my key contributions:
 
+## Core Module Development
 
-## 技术栈
+### 1. Architecture Design of Data Analysis Module
+- Designed and implemented an MVC-based architecture for the Data Analysis module, ensuring clear separation of responsibilities
+- Developed a data adapter layer to efficiently transform raw transaction data into visualization-friendly formats
+- Designed an extensible chart generation interface to support seamless integration of various chart types
 
-- Java 8
-- Swing GUI
-- JSON数据存储
-- DeepSeek AI API
+### 2. Core Feature Implementation
+- Implemented single-month expense analysis with pie charts to visually represent category distributions
+- Developed multi-month trend analysis using line charts to display income, expense, and balance trends
+- Designed and implemented an expense prediction algorithm to forecast future spending based on historical data
+- Built quarterly analysis capabilities with bar charts to compare expenditure across different quarters
 
-## 系统要求
+### 3. Technology Selection and Integration
+- Evaluated and integrated JFreeChart library for data visualization
+- Designed data processing pipelines to ensure efficient analysis of large datasets
+- Implemented customizable chart styling to enhance visual appeal and data interpretability
 
-- Java 8或更高版本
-- 互联网连接（用于AI功能）
+## Testing Framework Establishment
 
-## 安装指南
+### 1. Unit Test Coverage
+- Wrote comprehensive unit tests for the Data Analysis module with over 90% coverage
+- Designed edge case test scenarios to ensure system robustness under various conditions
+- Implemented automated testing workflows for continuous integration environments
 
-1. 确保已安装Java 8
-2. 下载发布包（JAR文件）
-3. 创建 `config.properties`文件，配置DeepSeek API密钥
-4. 双击JAR文件运行，或使用命令行：`java -jar FinanceManager.jar`
+### 2. Testing Toolchain Setup
+- Introduced JUnit 5 as the primary testing framework
+- Integrated Mockito for dependency mocking to ensure test independence
+- Configured JaCoCo for test coverage analysis
 
-## 配置DeepSeek API
+### 3. Quality Assurance Measures
+- Established code review processes to enforce coding standards and best practices
+- Designed performance test cases to optimize critical data processing workflows
+- Implemented exception handling tests to improve system fault tolerance
 
-在应用程序根目录创建 `config.properties`文件，添加以下内容：
+## Technical Leadership & Team Collaboration
 
-deepseek.api.key=YOUR_API_KEY_HERE，将 `YOUR_API_KEY_HERE`替换为您的DeepSeek API密钥。
+### 1. Technical Guidance & Training
+- Conducted training sessions on JFreeChart and data visualization techniques for team members
+- Shared design patterns and best practices to elevate the team's technical capabilities
+- Mentored junior developers in resolving technical challenges
 
-## 使用指南
+### 2. Cross-functional Collaboration
+- Worked closely with UI/UX team to ensure optimal presentation of analytical results
+- Collaborated with backend team to optimize data APIs for improved performance
+- Participated in product requirement discussions to provide technical feasibility analysis
 
-1. **主界面**：显示财务概览和导航选项
-2. **AI对话**：与AI助手进行对话，获取财务建议
-3. **资产预算**：管理账户和预算
-4. **交易详情**：查看交易历史和统计数据
-5. **记账**：添加收入和支出交易
-6. **储蓄计划**：设置和跟踪储蓄目标
+### 3. Project Management
+- Defined detailed development plans and milestones to ensure on-time delivery
+- Tracked project progress and proactively addressed risks and issues
+- Organized code reviews and technical sharing sessions to foster team communication
 
-## CSV导入格式
-
-导入CSV文件应包含以下列（第一行为标题）：
-
-日期,类型,分类,金额,备注
-2023-01-01,收入,工资,5000,1月工资
-2023-01-02,支出,餐饮,100,午餐
-
-## 项目结构
-
-- `src/` - 源代码
-  - `main/java/com/financemanager/` - Java源文件
-    - `controller/` - 控制器层
-    - `model/` - 模型层
-    - `view/` - 视图层
-    - `service/` - 服务层
-    - `util/` - 工具类
-  - `test/` - 测试代码
-- `data/` - 数据文件
-- `docs/` - 文档
-
-## 开发指南
-
-1. 使用Maven构建项目：`mvn clean package`
-2. 运行测试：`mvn test`
