@@ -1,4 +1,5 @@
 Personal Contribution - [Site Li]
+
 As a developer of the Transaction Management module in the finance management system, I designed and implemented the core transaction processing engine, including advanced querying, CSV interoperability, and real-time budget integration. Below is a detailed breakdown of my contributions:
 
 Core Module Development
