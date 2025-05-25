@@ -47,5 +47,3 @@ As the developer responsible for the **AI Conversation Panel** in the finance ma
 ### 2. Code Integration
 - Worked with other development team members to ensure seamless integration of the AI Conversation Panel with the overall application architecture.
 - Facilitated knowledge sharing regarding the AI functionality and its implementation, contributing to team cohesion and project synergy.
-
-Through these contributions, I successfully enhanced the finance management system by providing an interactive AI interface, facilitating better user engagement and access to financial advice.
